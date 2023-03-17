@@ -57,5 +57,5 @@ export const IconsWrapper = styled.div`
     display: flex;
     gap: 30px;
     justify-content: center; 
-    margin-top: 50px;
+    margin-top: 10px;
 `

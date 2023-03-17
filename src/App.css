@@ -5,6 +5,7 @@
 
 .icon-style {
   color: #64748b;
+  cursor: pointer;
   height: 40px;
   padding-top: 15px;
   width: 40px;
@@ -17,4 +18,8 @@
 
 .margin-0{
   margin: 0px;
+}
+
+.green-color{
+  color: #22c55e;
 }

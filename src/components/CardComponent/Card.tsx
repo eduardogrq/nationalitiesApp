@@ -11,15 +11,13 @@ import {
 from "./style";
 
 import { 
-    AiOutlineCalendar,
-    AiOutlineHeatMap, 
+    AiOutlineCalendar, 
     AiOutlineMail, 
     AiOutlineUser, 
     AiOutlineAim, 
     AiOutlinePhone,
     AiOutlineLock
 } from "react-icons/ai";
-
 
 const Card = ({user}:any) => {
 
