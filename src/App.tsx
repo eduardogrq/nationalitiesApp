@@ -1,7 +1,6 @@
 
 import './App.css';
 import Card from './components/CardComponent/Card';
-import { myUser, Root } from './api/request';
 import { useEffect, useState } from 'react';
 
 const App = () => {
@@ -21,7 +20,7 @@ const App = () => {
   const [user, setUser] = useState<User | null>(null);
   const [isLoading, setIsLoading] = useState<boolean>(true);
 
-  const myFunction = (): void => {
+  const getUserData = (): void => {
     fetch('https://randomuser.me/api')
       .then((response) => response.json())
       .then((data) => {
@@ -44,7 +43,7 @@ const App = () => {
   };
 
   useEffect(() => {
-    myFunction();
+    getUserData();
   }, []);
 
   return (

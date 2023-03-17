@@ -48,3 +48,14 @@ export const Image = styled.img`
     height: 100%;
     width: 100%;
 `
+export const InfoContainer = styled.div`
+    height: 70%;
+    padding-top: 75px;
+`
+
+export const IconsWrapper = styled.div`
+    display: flex;
+    gap: 30px;
+    justify-content: center; 
+    margin-top: 50px;
+`

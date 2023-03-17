@@ -3,10 +3,23 @@ import {
     CardContainer, 
     CardObject, 
     HeaderCard,
+    IconsWrapper,
     Image,
-    ImageWrapper
+    ImageWrapper,
+    InfoContainer
 }     
 from "./style";
+
+import { 
+    AiOutlineCalendar,
+    AiOutlineHeatMap, 
+    AiOutlineMail, 
+    AiOutlineUser, 
+    AiOutlineAim, 
+    AiOutlinePhone,
+    AiOutlineLock
+} from "react-icons/ai";
+
 
 const Card = ({user}:any) => {
 
@@ -21,13 +34,18 @@ const Card = ({user}:any) => {
                         <Image src={picture.large} alt="Profile image"/>
                     </ImageWrapper>
                 </HeaderCard>
-                <div style={{height: '70%', paddingTop: '75px'}}>
-                    <h4 style={{margin: '0px'}}>Hi, My name is</h4>
-                    <h1>{fullname}</h1>
-                    <div>
-
-                    </div>
-                </div>
+                    <InfoContainer>
+                        <h4 className="margin-0">Hi, My name is</h4>
+                        <h1>{fullname}</h1>
+                        <IconsWrapper>
+                        <AiOutlineUser className="icon-style" />
+                            <AiOutlineMail className="icon-style" />
+                            <AiOutlineCalendar className="icon-style" />
+                            <AiOutlineAim className="icon-style" />
+                            <AiOutlinePhone className="icon-style" />
+                            <AiOutlineLock className="icon-style" />
+                        </IconsWrapper>
+                    </InfoContainer>
             </CardObject>
         </CardContainer>
     )
